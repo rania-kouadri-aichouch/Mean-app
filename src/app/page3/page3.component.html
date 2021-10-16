@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+
+
+<div class="col-xs-6 col-sm-6" >
+
+<div class="sign">
+  <h1>Ajouter un cour</h1>
+<form class="col-sm-12"  #myForm="ngForm" (ngSubmit)="OnSubmitAddCour(myForm.value)">
+<div class="form-group">
+  <label for="t">titre</label>
+
+  <input type="text" placeholder="Titre" required   minlength="5" class="form-control" id="t" name="titre" #titre="ngModel" [(ngModel)]="cours['titre']">
+  <div *ngIf="titre.errors && (titre.invalid || titre.untouched)">
+  <small class="text-danger" *ngIf="titre.errors.required">ce champs est obligatoire</small>
+      </div>
+  </div>
+  <div class="form-group">
+     <label for="m">module</label>
+   <input type="text" placeholder="Module" required class="form-control" id="m" name="module" #module="ngModel" [(ngModel)]="cours['module']">
+   <div *ngIf="module.errors && (module.invalid || module.untouched)">
+   <small class="text-danger" *ngIf="module.errors.required">ce champs est obligatoire</small>
+       </div>
+   </div>
+   <div class="form-group">
+     <label for="d">date</label>
+   <input type="date"  class="form-control" required id="d" name="date" #date="ngModel" [(ngModel)]="cours['date']">
+   <div *ngIf="date.errors && (date.invalid || date.untouched)">
+   <small class="text-danger" *ngIf="date.errors.required">ce champs est obligatoire</small>
+       </div>
+   </div>
+   <div class="form-group">
+     <label for="h">heur</label>
+   <input type="number" placeholder="Heur de début" class="form-control" required id="h" name="heur" #heur="ngModel" [(ngModel)]="cours['heur']">
+   <div *ngIf="heur.errors && (heur.invalid || heur.untouched)">
+   <small class="text-danger" *ngIf="heur.errors.required">ce champs est obligatoire</small>
+       </div>
+   </div>
+   <div class="form-group">
+     <label for="du">duree</label>
+<input type="number" placeholder="Duree du cour" class="form-control" required id="du" name="duree"  #duree="ngModel" [(ngModel)]="cours['duree']">
+<div *ngIf="duree.errors && (duree.invalid || duree.untouched)">
+<small class="text-danger" *ngIf="duree.errors.required">ce champs est obligatoire</small>
+    </div>
+</div>
+<div class="form-group">
+  <label for="des">description</label>
+<input type="text"  placeholder="description" class="form-control"  required id="des" name="description" #description="ngModel" [(ngModel)]="cours['description']">
+<div *ngIf="description.errors && (description.invalid || description.untouched)">
+<small class="text-danger" *ngIf="description.errors.required">ce champs est obligatoire</small>
+    </div>
+</div>
+<div class="form-group">
+<input type="submit" class="btn btn-success"  value="sauvgarder" [disabled]="!myForm.valid">
+</div>
+</form>
+</div>
+</div>
+<div class="col-xs-6 col-sm-6" >
+  <div class="side">
+<img src="assets/img/cours.png"/>
+<p>
+  Bienvenu a online Courses
+  <br>
+  ajouter vos cours<br>
+modifier et supprimer vos cours a tous moment.
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>

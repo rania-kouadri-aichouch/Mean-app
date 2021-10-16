@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+
+
+<div class="col-xs-6 col-sm-6 col-lg-6" >
+
+
+<div class="sign">
+  <h1>Modifier le cour</h1>
+<form class="col-sm-12"  #myForm="ngForm" (ngSubmit)="OnUpdate(myForm.value)">
+
+    <label for="t">Id</label>
+   <input type="text" class="form-control" name="id" #id="ngModel" [(ngModel)]="courId"/>
+
+<label for="t">titre</label>
+   <input type="text" id="t"  class="form-control" name="titre" #titre="ngModel" [(ngModel)]="t">
+<label for="t">Module</label>
+   <input type="text" class="form-control" name="module" #module="ngModel" [(ngModel)]="m">
+
+<label for="t">Date</label>
+   <input type="date" class="form-control"  name="date" #date="ngModel" [(ngModel)]="d">
+
+<label for="t">Heur</label>
+   <input type="number" class="form-control" name="heur" #heur="ngModel" [(ngModel)]="h">
+
+<label for="t">Duree</label>
+<input type="number" class="form-control" name="duree"  #duree="ngModel" [(ngModel)]="du">
+
+<label for="t">description</label>
+<input type="text" class="form-control" name="description" #description="ngModel" [(ngModel)]="des">
+
+<input type="submit" class="form-control"  value="sauvgarder"/>
+</form>
+</div>
+
+</div>
+<div class="col-xs-6 col-sm-6 col-lg-6" >
+  <div class="side">
+<img src="assets/img/cours.png"/>
+<p>
+
+  Bienvenu a online Courses
+  <br>
+  ajouter vos cours<br>
+modifier et supprimer vos cours a tous moment.
+  </p>
+  </div>
+
+  </div>
+  </div>
+  </div>

@@ -1,0 +1,19 @@
+<!--<h1>Ajouter un produit</h1>
+<form #myform="ngForm" [ngStyle]="form">
+    <input type="text"  name="Desig" [(ngModel)]="mavar" #Desig="ngModel"
+     placeholder="Designation" required [ngStyle]="input"  minlength="5" maxlength="20" pattern="[a-zA-Z/s+ ]+"/>
+      <div *ngIf="Desig.errors && (Desig.invalid || Desig.untouched)">
+      <small class="text-danger" *ngIf="Desig.errors.required">ce champs est obligatoire</small>
+          </div>
+
+
+   <input type="text"  name="prix" [(ngModel)]="mavar2" #prix="ngModel"  placeholder="prix"
+  pattern="[0-9]+"
+    required [ngStyle]="input"/>
+             <div *ngIf="prix.errors && (prix.invalid || prix.untouched)">
+         <small class="text-danger" *ngIf="prix.errors.required">ce champs est obligatoire</small>
+
+              </div>
+       <input type="submit" [ngStyle]="input"  value="Ajouter"  class="btn btn-success"  [disabled]="!myform.valid">
+
+</form>-->

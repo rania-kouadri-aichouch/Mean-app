@@ -1,0 +1,58 @@
+<p>composent works!</p>
+ <p>Nom : {{person.nom}}</p>
+
+ {{"Bonjour"+" le monde"}}
+ {{2+2}}
+
+ {{10.5+10.5}}
+
+<!--
+ <div [ngStyle]="monStyle">division 2</div>
+
+ <div class="container"  [ngStyle]="monStyle" >
+    <div class="row">
+        <div class="col-sm-6">Col 1</div>
+         <div class="col-sm6 ">Col 2</div>
+         </div>
+       </div>
+
+       <div [ngStyle]="mStyle" (click)="maFonction()">division 2</div>
+
+<ol>
+<li *ngFor="let f of fruits"> {{f.nom}} <img src="{{f.img}}"/></li>  </ol>
+
+<h1 (click)="fc()">clickez ici</h1>
+<div *ngIf="valeur"> division pour hjkk </div>
+
+
+<p *ngIf="val; else elseBlock">hhhhhhhhhhhhhh</p>
+<ng-template  #elseBlock>
+//éléments html qui s’affiche si !val</ng-template>
+
+
+
+<input type="text" [(ngModel)]="valeurInput">
+{{valeurInput}}
+
+
+
+<form #myform="ngForm">
+     <input type="text"  name="mail" [(ngModel)]="mavar" #mail="ngModel"/>
+        <input type="text"  name="pwd" [(ngModel)]="mavar2" #pwd="ngModel"/>
+      </form>
+      <p>{{mail.value}}</p>
+      <!--<p>{{myform.value |json}}</p>-->
+
+
+
+<!--
+      <form #myform="ngForm">
+         <input type="text" required  name="mail" [(ngModel)]="mavar" #mail="ngModel" />
+       </form>
+         <p><b>valeur de l'email: </b>{{mail.value}}</p>
+           <p><b>touched: </b>{{mail.touched}}</p>
+           <p><b>pristine: </b>{{mail.pristine}}</p>
+             <p><b>dirty: </b>{{mail.dirty}}</p>
+                <p><b>valid: </b>{{mail.valid}}</p>
+                   <p><b>invalid: </b>{{mail.invalid}}</p>
+                   <!--<p>{{myform.value |json}}</p>-->

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+
+
+<div class="col-xs-12 col-sm-12" >
+<h1>Les Cours</h1>
+<table border="1px">
+ <tr>
+<th>titre</th>
+<th>module</th>
+<th>date</th>
+<th>heur</th>
+<th>duree</th>
+<th>description</th>
+ </tr>
+ <tr *ngFor="let u of cours">
+<td>{{u.titre}}</td>
+<td>{{u.module}}</td>
+<td>{{u.date|date}}</td>
+<td>{{u.heur}} heur</td>
+<td>{{u.duree}} heur</td>
+<td>{{u.description}}</td>
+<td class="td"><input type="button" name="modifier" class="btnm" value="modifier" (click)="OnUpdateFunction(u)" routerLink="/cours/{{u._id}}"></td>
+<td class="td"><input type="button" name="supprimer" class="btns" value="supprimer" (click)="OnDeleteCour(u)" routerLink="/page1"></td>
+
+ </tr>
+</table>
+</div>
+</div>
+</div>

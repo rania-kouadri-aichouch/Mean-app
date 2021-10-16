@@ -1,0 +1,58 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nv">
+
+  <a class="navbar-brand" href="#" ><h4>Online Courses</h4></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink= "/page1">Les cours<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink= "/page3">Ajouter cours</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink= "/lien3">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink= "/lien3">About</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+
+</nav>
+<div class="container-fluid">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12" >
+  <div class="des">
+    Atteignez vos objectifs avec <br/> Online Courses
+
+  </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12" >
+      <router-outlet></router-outlet>
+      </div>
+
+
+  </div>
+</div>
+
+        <footer>
+            <p>  @copyright rania kouadri aichouch</p>
+
+        </footer>
